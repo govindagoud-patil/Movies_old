@@ -14,7 +14,7 @@ builder.Services.AddDbContext<MovieDbContext>(opt => {
 });
 
 builder.Services.AddApplication();
-
+builder.Services.AddExceptionHandler<CustomExceptionHandler>();
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -22,7 +22,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseExceptionHandler(_ => { });
 app.UseHttpsRedirection();
 app.AddMovieEndpoints();
 

@@ -2,6 +2,7 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Movies.Contracts;
+using Movies.Domain.Entities;
 using Movies.Infrastructure;
 using System;
 using System.Collections.Generic;
@@ -25,7 +26,8 @@ namespace Movies.Application.Queries
 
             if (movie is null)
             {
-                throw new Exception();
+                throw new NotFoundException($"{nameof(Movie) } with {nameof(Movie.Id)}:{request.Id}" +
+                    $"Was not found in database");
             }
             return movie.Adapt<GetMovieByIdResponse>();
         }
