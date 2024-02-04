@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace Movies.Contracts;
 
-public record GetMovieByIdResponse(List<MovieDto> MovieDtos);
+public record GetMovieByIdResponse(MovieDto MovieDto);
 

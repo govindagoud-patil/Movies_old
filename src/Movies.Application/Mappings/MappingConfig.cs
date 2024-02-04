@@ -11,7 +11,7 @@ public class MappingConfig
         TypeAdapterConfig<List<Movie>, GetMoviesResponse>.NewConfig()
             .Map(dest => dest.MovieDtos, src => src);
 
-        TypeAdapterConfig<List<Movie>, GetMovieByIdResponse>.NewConfig()
-           .Map(dest => dest.MovieDtos, src => src);
+        TypeAdapterConfig<Movie, GetMovieByIdResponse>.NewConfig()
+           .Map(dest => dest.MovieDto, src => src);
     }
 }
