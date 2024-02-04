@@ -9,7 +9,7 @@ export const routes: RouteObject[] = [
         element: <App />,
         children: [
                 { path: 'createMovie', element: <MovieForm key='create' /> },
-            { path: 'editMovie/:id', element: <MovieForm key='edit'  /> },
+                { path: 'editMovie/:id', element: <MovieForm key='edit'  /> },
                 { path: '*', element: <MovieTable /> }
             ]
     }
