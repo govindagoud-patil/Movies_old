@@ -17,6 +17,11 @@ namespace Movies.Presentation
             return true;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="exception"></param>
+        /// <returns></returns>
         private static ProblemDetails CreateProblemDetails(Exception exception)
         {
             ProblemDetails problemDetails = exception switch
