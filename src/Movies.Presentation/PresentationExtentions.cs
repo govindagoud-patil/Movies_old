@@ -5,6 +5,9 @@ using Movies.Contracts;
 
 namespace Movies.Presentation
 {
+    /// <summary>
+    /// Extensions for presention layer
+    /// </summary>
     public static class PresentationExtensions
     {
         public static void AddMovieEndpoints(this IEndpointRouteBuilder route)
