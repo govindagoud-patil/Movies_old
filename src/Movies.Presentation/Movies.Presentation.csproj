@@ -24,4 +24,13 @@
     <ProjectReference Include="..\Movies.Application\Movies.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Client\movies\public\" />
+    <Folder Include="Client\movies\src\assets\" />
+    <Folder Include="Client\movies\src\Componets\Movies\" />
+    <Folder Include="Client\movies\src\Interceptors\" />
+    <Folder Include="Client\movies\src\api\" />
+    <Folder Include="Client\movies\src\router\" />
+  </ItemGroup>
+
 </Project>
